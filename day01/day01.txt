@@ -1,0 +1,21 @@
+list(列表):list=[],列表可更该
+
+names=["test1","test2","test3"],其中test3的索引值为2,即name[2],print出来就是test3
+names[起:止:步长],这种形式就叫做切片,包括起但不包括止，也就是names[0:2]默认只能取到"test1","test2",想取到所有则,names[0:]即可，想要倒序取出names[-1::-1]即可，-1代表最后一个元素
+
+字符串的常见操作,用法:先定义一个 myStr = "hello world itcast and itcastcpp"
+切记在使用这些属性操作的时候，如果是找字符串则("")要加上双引号，如果是数字则不必
+myStr.find("world") : 判断world在不在这个字符串里面,如果在则返还其索引值
+myStr.rfine("world") : 即从右往左找，如果world不在字符串里则返还-1
+myStr.index("world") : 也是判断world在不在字符串里，返还索引值
+myStr.rindex("world") : 从右往左找，如果不在字符串里，则程序异常
+myStr.count("worle") : 查看world在此字符串里出现的次数
+myStr.replace("itcast","change",count) : replace的意思是更换，要被替换的字符串的前,想要替换为的字符串在后.后面加上count(次数)，表示想替换几次，如果不写就是全局替换
+myStr.split(" ") : split的意思是切割，即把每一个" "空格前和空格后切割成每一个元素，如果找一个变量去接受切割后的myStr则其类型就是一个列表.其实际就表示，如果你想切割i,则myStr.split("i")的返还值则为:["hello world ","tcast and ",tastcpp"]  //我感觉这个split只可意会，不可言传^-^
+
+
+
+tuple(元组):tuple()，元组不可更改，数字，字符串，元组是不可变类型
+曾删改查:
+增:
+    .append(字符串/数据):在列表末尾添加元素
