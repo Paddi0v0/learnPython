@@ -1,0 +1,37 @@
+dictionary 字典
+定义一个字典,infor ={'name':'laowang', 'gae':12}
+
+len(infor) 返还值为测得字典的长度,返还的是字典的key值,有几个key就返还几
+
+infor.keys() 返还所有key的值
+pyrhon2中返还值是一个列表['name', 'age']  多用于查找key.
+python3的返还值则为:dict_keys(['name', 'age'])
+infor.get("key_name")可以查找这个键在不在，如果在就返还其value,如果不在则程序报错,现在查找一个key在不在字典里可以infor.keys()用if判断in or not in
+
+infor.values() 返还所有value的值
+在python2中返还值是一个列表['value', 'value']
+在python3中返还则则为:dict_values(['value', '12'])
+
+python2中是列表
+python3中当成了对象
+
+infor.items() 即拿到key也拿到value  返还值是一个元组，里面分别是列表.
+for temo in infor.items()的时候  返还值是元组!
+
+a = (11,22)
+
+b = a
+print("b ="),b = (11,22)则b是一个元组
+
+但是如果:
+
+c,d = a
+print("c = %d,d = %d",%(c,d))的话，则打印出来的是,c = 11 ,d = 12
+这种方法类似于拆包.
+去元组里的元素的值，可以使用下标，也可以使用定义多个变量去取！
+
+a是一个元组，赋值之后，不会发生改变
+
+for temp in infor.items():此时的temp是一个元组('name','laowang')
+想把这两个值分开取出，则可以:for A,B in infor.items():
+此时第一次循环的A则为name,B则为laowang.

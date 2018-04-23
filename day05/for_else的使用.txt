@@ -1,0 +1,13 @@
+for循环的else的用法: for循环里面的东西循环遍历完之后，才会执行else
+             如果在for循环里加入break，则for执行完就会跳出循环，不执行break
+
+nums = [11,22,33,44,55,66,77]
+fot num in nums:
+    print(num)
+    break
+else:
+    print("结束了")
+
+名片管理系统的查找系统，可以用for,else来写
+
+

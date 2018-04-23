@@ -39,13 +39,20 @@ while True:
             pass
         elif num == 4:
             name_search = input("请输入要查找的名字:")
-            search_flag = 0
+#            search_flag = 0
+#            for search in card:
+#                if name_search == search['name']:
+#                    print("找到了")
+#                    search_flag = 1
+#                    break
+#            if search_flag == 0:
+#                print("查无此人")
+#用for_else来改写查找系统
             for search in card:
                 if name_search == search['name']:
                     print("找到了")
-                    search_flag = 1
                     break
-            if search_flag == 0:
+            else:
                 print("查无此人")
         elif num == 5:
             print("姓名\t地址\t年龄\t手机号")
