@@ -1,0 +1,16 @@
+字典(Dictionary).相对与list和tuple的优势是只需要根据键来找值，不一定非要知道下标
+保存多人信息,方法: 列表里可以嵌套字典
+list = [{test1:"nihao"}, {"test2":"heihei"}]
+
+
+字典格式 : name = {键:值， 键:值, 键:值}  {key:value} 键值对
+           print = ("%s %d %s"%(name[""], name[""], name[""]))
+
+字典的增删改查 : test = {'name':'liuwendang'}
+    增 : test['age'] = 18  test['key'] = value
+         添加时只要key不存在就是添加,如果key存在,那么就是赋值,即修改！
+    删 : del test['age']
+    改 : test['已存在的key'] = new_value
+    查 : test['addr']如果有返还value,如果没有程序就会报错
+         test.get('addr')如果有就返还value,如果没有无返还值
+
