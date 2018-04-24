@@ -1,0 +1,62 @@
+function(函数) : 把具有一个独立功能的代码块，当作一个整体，这个整体就当做函
+数
+
+函数 : 即可以让代码模块化
+
+定义一个函数的方法:
+
+def 函数名():
+    独立的代码块
+
+把一堆代码变成函数,其实就是.
+
+调用使用函数:
+    def test():
+        print("heihei")
+        print("haha")
+    test()
+#以上就是函数的使用方法
+
+带有参数的函数:
+def test(a,b):
+    result = a+b
+    print("%d+%d=%d"%(a,b,result))
+num1 = int(input("请输入第1个数:"))
+num2 = int(input("请输入第2个数:"))
+test(num1,num2)
+这就是函数的定义，与调用
+
+return执行，代表函数执行完毕
+
+函数的四种类型:
+def 函数名():
+    pass
+def 函数名():
+    return xxx
+def 函数名(参数):
+    pass
+def 函数名(参数):
+    return xxx
+
+函数的嵌套调用:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
