@@ -1,0 +1,48 @@
+匿名函数格式:
+                lambda = 变量:式子
+例子:
+    要计算a+b的和,并打印在屏幕上:
+        lambds a,b:a+b
+        result = test(5,6)
+        print(result)
+ 
+与普通函数的不同在于,普通函数需要ruturn,返回值才可以有结果
+    要计算a+b的和，并打印在屏幕上:
+    错误的写法:
+        def test(a,b):
+            a+b
+        result = test(5,6)
+        print(result)
+    正确的写法:
+        def test(a,b):
+            return a+b
+        result = test(5,6)
+        print(result)
+
+num = []
+num.sort()顺序排序  :当num里面是数字,或者字符串的时候顺序输出
+num.sort(reverse=True)  :逆序排序
+
+
+eval(Str) : 让Str去掉""双引号,来执行,常与input一起使用
+
+交换两个变量的值:
+a = 5
+b = 6
+
+#交换方式1
+c = 0
+c = a
+a = b
+b = c
+
+#交换方式2
+a = a+b
+b = a-b
+
+#交换方式3
+a,b = b,a
+a = a-b
+
+num = num+num  : 让num指向一个新的引用,
+num += num  : 是num指向那个引用,就修改那个引用,如果引用不可修改,则生成新的引用

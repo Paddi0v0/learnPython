@@ -1,0 +1,22 @@
+在python中修改文件名:
+    import os
+    os.rename('test.txt', 'test1.txt')
+删除文件:
+    import os
+    os.remove('test1.txt')
+创建文件夹:
+    import os
+    os.mkdir('test')
+获取当前目录:
+    import os
+    os.getcwd()
+改变当前路径:
+    import os
+    os.chdir('../')
+获取目录列表: 把当前路径下的所有文件和文件夹,打包成一个list,每个文件夹或者
+              文件都是其list中的一个元素
+    import os
+    os.listdir('./')
+删除文件夹:
+    import os
+    os.rmdir('')
